@@ -10,9 +10,8 @@ while True:
     else:
         if len(string) == 1:
             if string[0] == '.':
-                string = ''
                 break
-            
+
         for s in string:
             if s == '(' or s == '[':
                 stack.append(s)
