@@ -3,7 +3,7 @@ def solution(s):
     answer = ''
 
     for w in s.split(' '):
-        if w.isalpha():
+        if len(w) > 0 and w[0].isalpha():
             word.append(w[0].upper() + w[1:].lower())
         else:
             word.append(w.lower())
